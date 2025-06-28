@@ -1,0 +1,49 @@
+# GitHub Pages Configuration
+title: "Harney County Digital Wellness"
+description: "Practical tools for Harney County families to build healthy screen habits and digital wellness."
+url: "https://yourusername.github.io"
+baseurl: "/healthy_digital_habits"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: "Harney County Digital Wellness Initiative"
+social:
+  name: "Harney County Digital Wellness"
+  links:
+    - "https://github.com/yourusername/healthy_digital_habits"
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

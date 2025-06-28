@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Breaks - Harney County Digital Wellness</title>
+    <meta name="description" content="Screen-free activities, mindful moment cards, and family activities for healthy digital balance.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Harney County Digital Wellness</a></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="quick-start.html" class="nav-link">Quick Start</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link active">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Mindful Breaks</h1>
+                <p>Screen-free activities, mindful moment cards, and fun family pauses that bring you together</p>
+            </div>
+        </section>
+
+        <section class="daily-challenge">
+            <div class="container">
+                <h2>Today's Mindful Moment Challenge</h2>
+                <div class="challenge-card" id="daily-challenge">
+                    <div class="challenge-content">
+                        <h3 id="challenge-title">Loading today's challenge...</h3>
+                        <p id="challenge-description"></p>
+                        <div class="challenge-timer">
+                            <button class="btn btn-primary" onclick="startChallenge()">Start 5-Minute Challenge</button>
+                            <div id="timer-display" class="hidden">
+                                <span id="time-remaining">5:00</span>
+                                <button class="btn btn-secondary" onclick="completeChallenge()">I'm Done!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="btn btn-outline" onclick="getNewChallenge()">Get Different Challenge</button>
+                        <button class="btn btn-outline" onclick="shareChallenge()">Share with Family</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mindful-cards">
+            <div class="container">
+                <h2>DIY Mindful-Moment Break Cards</h2>
+                <p class="section-intro">Create physical reminder cards to place near devices for quick mindful pauses</p>
+                
+                <div class="cards-instructions">
+                    <h3>What You'll Need:</h3>
+                    <ul class="supplies-list">
+                        <li>📋 3" x 5" index cards or plain printer paper</li>
+                        <li>🖊️ Pens, markers, or colored pencils</li>
+                        <li>✂️ Scissors (if cutting paper)</li>
+                        <li>🎨 Optional: stickers, tape for decoration</li>
+                    </ul>
+                </div>
+                
+                <div class="card-steps">
+                    <h3>Step-by-Step Instructions:</h3>
+                    <div class="steps-grid">
+                        <div class="instruction-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Gather Cards</h4>
+                                <p>Aim for at least 4-6 cards so one can live near each high-use device</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Fold into a "Tent"</h4>
+                                <p>Make a firm horizontal crease across the center, so it can stand like an upside-down V. Best with cardstock or doubled paper.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Label the Front</h4>
+                                <p>Write a big, inviting title such as "PAUSE" or "BREATHE"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Add 3-Step Prompt</h4>
+                                <p>On the back, write a prompt that helps you pause, notice feelings, and choose a mindful action</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Decorate Together</h4>
+                                <p>As a family, color or add stickers so each card feels personal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>Place & Rotate</h4>
+                                <p>Stand cards by devices (TV, computer, game console). Swap prompts weekly to keep them fresh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-templates">
+                    <h3>Mindful Card Templates</h3>
+                    <p>Choose from these proven prompts or create your own:</p>
+                    
+                    <div class="template-grid">
+                        <div class="template-card" onclick="selectTemplate(this, 'pause-breathe')">
+                            <h4>PAUSE & BREATHE</h4>
+                            <div class="template-content">
+                                <p><strong>1.</strong> Stop what you're doing</p>
+                                <p><strong>2.</strong> Take 3 deep breaths</p>
+                                <p><strong>3.</strong> Ask: "How am I feeling right now?"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="template-card" onclick="selectTemplate(this, 'gratitude')">
+                            <h4>GRATITUDE PAUSE</h4>
+                            <div class="template-content">
+                                <p><strong>1.</strong> Look around you</p>
+                                <p><strong>2.</strong> Name 3 things you're grateful for</p>
+                                <p><strong>3.</strong> Smile and take a deep breath</p>
+                            </div>
+                        </div>
+                        
+                        <div class="template-card" onclick="selectTemplate(this, 'body-check')">
+                            <h4>BODY CHECK</h4>
+                            <div class="template-content">
+                                <p><strong>1.</strong> Notice how your body feels</p>
+                                <p><strong>2.</strong> Stretch your neck and shoulders</p>
+                                <p><strong>3.</strong> Blink slowly 5 times</p>
+                            </div>
+                        </div>
+                        
+                        <div class="template-card" onclick="selectTemplate(this, 'connection')">
+                            <h4>CONNECT</h4>
+                            <div class="template-content">
+                                <p><strong>1.</strong> Put the device down</p>
+                                <p><strong>2.</strong> Look for a family member or pet</p>
+                                <p><strong>3.</strong> Give them your full attention for 1 minute</p>
+                            </div>
+                        </div>
+                        
+                        <div class="template-card" onclick="selectTemplate(this, 'movement')">
+                            <h4>MOVE YOUR BODY</h4>
+                            <div class="template-content">
+                                <p><strong>1.</strong> Stand up and stretch tall</p>
+                                <p><strong>2.</strong> Do 10 jumping jacks or push-ups</p>
+                                <p><strong>3.</strong> Notice how your energy feels now</p>
+                            </div>
+                        </div>
+                        
+                        <div class="template-card" onclick="selectTemplate(this, 'nature')">
+                            <h4>NATURE MOMENT</h4>
+                            <div class="template-content">
+                                <p><strong>1.</strong> Look out a window</p>
+                                <p><strong>2.</strong> Find something in nature (tree, cloud, bird)</p>
+                                <p><strong>3.</strong> Watch it for 30 seconds without judgment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="template-actions">
+                        <button class="btn btn-primary" onclick="downloadSelectedTemplates()">Download Selected Templates</button>
+                        <button class="btn btn-secondary" onclick="createCustomTemplate()">Create Custom Template</button>
+                        <button class="btn btn-outline" onclick="printAllTemplates()">Print All Templates</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="family-activities">
+            <div class="container">
+                <h2>Screen-Free Family Activities</h2>
+                <p class="section-intro">Fun alternatives to screen time that bring your family together</p>
+                
+                <div class="activity-categories">
+                    <div class="category-tabs">
+                        <button class="tab-button active" onclick="showActivityCategory('indoor')">Indoor Activities</button>
+                        <button class="tab-button" onclick="showActivityCategory('outdoor')">Outdoor Activities</button>
+                        <button class="tab-button" onclick="showActivityCategory('creative')">Creative Activities</button>
+                        <button class="tab-button" onclick="showActivityCategory('quick')">5-Minute Activities</button>
+                    </div>
+                    
+                    <div id="indoor-activities" class="activity-category active">
+                        <div class="activities-grid">
+                            <div class="activity-card">
+                                <h4>🎲 Board Game Tournament</h4>
+                                <p>Set up a family tournament with different games each night</p>
+                                <span class="time-badge">30-60 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🍪 Cooking Together</h4>
+                                <p>Try a new recipe or bake cookies as a team</p>
+                                <span class="time-badge">45-90 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>📚 Family Reading Time</h4>
+                                <p>Everyone reads their own book in the same room</p>
+                                <span class="time-badge">20-30 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🧩 Puzzle Challenge</h4>
+                                <p>Work together on a jigsaw puzzle over several days</p>
+                                <span class="time-badge">15-45 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🎭 Charades or Acting Games</h4>
+                                <p>Act out movies, books, or family memories</p>
+                                <span class="time-badge">15-30 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🧘 Family Yoga</h4>
+                                <p>Follow a simple routine or make up your own poses</p>
+                                <span class="time-badge">15-30 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="outdoor-activities" class="activity-category hidden">
+                        <div class="activities-grid">
+                            <div class="activity-card">
+                                <h4>🥾 Nature Walk</h4>
+                                <p>Explore your neighborhood or local trails</p>
+                                <span class="time-badge">20-60 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🌱 Garden Together</h4>
+                                <p>Plant flowers, vegetables, or herbs</p>
+                                <span class="time-badge">30-60 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>⚽ Backyard Games</h4>
+                                <p>Play catch, frisbee, or create an obstacle course</p>
+                                <span class="time-badge">20-45 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🔍 Scavenger Hunt</h4>
+                                <p>Create lists of things to find in your yard or neighborhood</p>
+                                <span class="time-badge">30-45 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🌟 Stargazing</h4>
+                                <p>Lie on blankets and look for constellations</p>
+                                <span class="time-badge">20-45 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🧼 Car Wash</h4>
+                                <p>Turn chores into fun with music and water fights</p>
+                                <span class="time-badge">45-60 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="creative-activities" class="activity-category hidden">
+                        <div class="activities-grid">
+                            <div class="activity-card">
+                                <h4>🎨 Art Projects</h4>
+                                <p>Draw, paint, or craft with whatever supplies you have</p>
+                                <span class="time-badge">30-90 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>✍️ Family Story Writing</h4>
+                                <p>Each person adds a sentence to create a silly story</p>
+                                <span class="time-badge">15-30 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>📷 Photo Scavenger Hunt</h4>
+                                <p>Use a camera (not phone) to capture specific items</p>
+                                <span class="time-badge">30-60 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🎵 Make Music</h4>
+                                <p>Sing together, make instruments, or have a dance party</p>
+                                <span class="time-badge">15-30 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🏗️ Building Challenge</h4>
+                                <p>Use blocks, cards, or household items to build structures</p>
+                                <span class="time-badge">30-60 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🎪 Talent Show</h4>
+                                <p>Each family member performs their special skill</p>
+                                <span class="time-badge">20-45 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="quick-activities" class="activity-category hidden">
+                        <div class="activities-grid">
+                            <div class="activity-card">
+                                <h4>🤗 Gratitude Circle</h4>
+                                <p>Each person shares one thing they're grateful for</p>
+                                <span class="time-badge">2-5 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>💃 Dance Break</h4>
+                                <p>Put on one song and dance together</p>
+                                <span class="time-badge">3-5 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🌬️ Breathing Exercise</h4>
+                                <p>Practice deep breathing together</p>
+                                <span class="time-badge">2-5 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🧸 Hug Marathon</h4>
+                                <p>See who can give the longest, warmest hug</p>
+                                <span class="time-badge">1-3 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>🎯 Quick Tidy Game</h4>
+                                <p>Set a timer and see how much you can clean together</p>
+                                <span class="time-badge">5 min</span>
+                            </div>
+                            <div class="activity-card">
+                                <h4>📞 Call Grandparents</h4>
+                                <p>Make a quick call to extended family</p>
+                                <span class="time-badge">5-10 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity-randomizer">
+                    <h3>Can't Decide? Let Us Choose!</h3>
+                    <p>Click the button to get a random activity suggestion based on your available time:</p>
+                    <div class="randomizer-controls">
+                        <select id="time-available">
+                            <option value="quick">5 minutes or less</option>
+                            <option value="short">15-30 minutes</option>
+                            <option value="medium">30-60 minutes</option>
+                            <option value="long">1+ hours</option>
+                        </select>
+                        <button class="btn btn-primary" onclick="getRandomActivity()">Get Random Activity!</button>
+                    </div>
+                    <div id="random-activity-result" class="hidden">
+                        <h4 id="random-activity-title"></h4>
+                        <p id="random-activity-description"></p>
+                        <button class="btn btn-outline" onclick="getRandomActivity()">Try Another</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist-builder">
+            <div class="container">
+                <h2>🎵 Student Safe Playlist Builder 🎧</h2>
+                <p class="section-intro">Build a playlist that keeps your head and heart in a good place. The music we listen to can influence how we feel, how we act, and how we cope.</p>
+                
+                <div class="playlist-content">
+                    <div class="student-section">
+                        <h3>For Students</h3>
+                        <div class="music-importance">
+                            <h4>Why Music Matters</h4>
+                            <ul>
+                                <li>Music can boost your energy, calm your nerves, or help you focus</li>
+                                <li>Some lyrics and sounds can also trigger sad or anxious feelings</li>
+                                <li>You deserve music that supports your wellbeing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="playlist-guidelines">
+                            <h4>How to Build a Safe Playlist</h4>
+                            <div class="guidelines-list">
+                                <div class="guideline-item positive">
+                                    <span class="icon">✅</span>
+                                    <p>Choose songs that make you feel strong, peaceful, or positive</p>
+                                </div>
+                                <div class="guideline-item positive">
+                                    <span class="icon">✅</span>
+                                    <p>Pick music that helps you focus, relax, or express yourself</p>
+                                </div>
+                                <div class="guideline-item negative">
+                                    <span class="icon">🚫</span>
+                                    <p>Avoid songs that leave you feeling angry, overwhelmed, or hopeless</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="playlist-prompts">
+                            <h4>Prompts to Help You Get Started</h4>
+                            <div class="prompts-grid">
+                                <div class="prompt-card">
+                                    <h5>😊 A song that makes you smile</h5>
+                                    <input type="text" placeholder="Song title and artist" class="song-input">
+                                </div>
+                                <div class="prompt-card">
+                                    <h5>🤗 A song that reminds you you're not alone</h5>
+                                    <input type="text" placeholder="Song title and artist" class="song-input">
+                                </div>
+                                <div class="prompt-card">
+                                    <h5>😌 A song that helps you feel calm</h5>
+                                    <input type="text" placeholder="Song title and artist" class="song-input">
+                                </div>
+                                <div class="prompt-card">
+                                    <h5>💪 A song that motivates you to keep going</h5>
+                                    <input type="text" placeholder="Song title and artist" class="song-input">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="savePlaylist()">Save My Playlist</button>
+                        </div>
+                    </div>
+                    
+                    <div class="parent-section">
+                        <h3>For Parents & Caregivers</h3>
+                        <div class="parent-guidance">
+                            <h4>How You Can Help</h4>
+                            <ul>
+                                <li>Ask your child about the music they're into without judgment</li>
+                                <li>Listen to a few songs together and talk about how they make you feel</li>
+                                <li>Encourage playlists that support your child's resilience and wellbeing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="red-flags">
+                            <h4>Red Flags in Media Content</h4>
+                            <p>Be aware of repeated themes like:</p>
+                            <ul>
+                                <li>Hopelessness or self-harm</li>
+                                <li>Glorification of violence or substance use</li>
+                                <li>Isolation or extreme emotional swings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playlist-resources">
+                    <h3>Resources</h3>
+                    <div class="resource-links">
+                        <a href="https://www.health.harvard.edu/newsletter_article/how-music-can-help-you-heal" target="_blank" class="resource-link">How Music Affects the Brain - Harvard Health</a>
+                        <a href="https://open.spotify.com/genre/wellness-page" target="_blank" class="resource-link">Spotify's Mental Health Playlists</a>
+                        <a href="https://www.commonsensemedia.org/" target="_blank" class="resource-link">Play It Safe: Media Tips for Teens – Common Sense Media</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="mindful-breaks.js"></script>
+</body>
+</html>

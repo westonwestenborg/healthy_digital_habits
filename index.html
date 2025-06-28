@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harney County Digital Wellness - Help Your Child Thrive</title>
+    <meta name="description" content="Practical tools for Harney County families to build healthy screen habits and digital wellness.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Harney County Digital Wellness</h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="quick-start.html" class="nav-link">Quick Start</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Help Your Child Thrive in a Digital World</h1>
+                <p>Practical tools for Harney County families to build healthy screen habits</p>
+                <div class="hero-buttons">
+                    <a href="assessment.html" class="btn btn-primary">Take the 2-Minute Family Assessment</a>
+                    <a href="quick-start.html" class="btn btn-secondary">Get Your Quick Start Guide</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-indicators">
+            <div class="container">
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span>Created with Harney County School District</span>
+                    </div>
+                    <div class="badge">
+                        <span>Backed by Research from Pacific University</span>
+                    </div>
+                    <div class="badge">
+                        <span>Used by 150+ Local Families</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-access">
+            <div class="container">
+                <h2>Quick Help</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Is 3 Hours Too Much?</h3>
+                        <p>Use our screen time calculator to find healthy limits for your child's age</p>
+                        <a href="screen-time-calculator.html" class="card-link">Check Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Worried About Cyberbullying?</h3>
+                        <p>Learn the warning signs and how to help your child stay safe online</p>
+                        <a href="cyberbullying-guide.html" class="card-link">Get Help</a>
+                    </div>
+                    <div class="card">
+                        <h3>Tonight's Family Challenge</h3>
+                        <p>Try a 5-minute screen-free activity that brings your family together</p>
+                        <a href="daily-challenge.html" class="card-link">Start Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Set Up Parental Controls</h3>
+                        <p>5-minute setup guides for phones, tablets, and gaming devices</p>
+                        <a href="parental-controls.html" class="card-link">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wellness-check">
+            <div class="container">
+                <h2>Digital Wellness Pulse Check</h2>
+                <p>Take this quick 3-question quiz to get personalized recommendations</p>
+                <div class="quiz-container">
+                    <div class="quiz-question" data-question="1">
+                        <h3>How many hours per day does your child spend on screens?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-value="low">Less than 2 hours</button>
+                            <button class="quiz-option" data-value="medium">2-4 hours</button>
+                            <button class="quiz-option" data-value="high">More than 4 hours</button>
+                        </div>
+                    </div>
+                    <div class="quiz-question hidden" data-question="2">
+                        <h3>What's your biggest concern about your child's digital habits?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-value="sleep">Sleep problems</button>
+                            <button class="quiz-option" data-value="social">Social interaction</button>
+                            <button class="quiz-option" data-value="safety">Online safety</button>
+                            <button class="quiz-option" data-value="behavior">Behavior changes</button>
+                        </div>
+                    </div>
+                    <div class="quiz-question hidden" data-question="3">
+                        <h3>How old is your child?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-value="elementary">Elementary (5-10)</button>
+                            <button class="quiz-option" data-value="middle">Middle School (11-13)</button>
+                            <button class="quiz-option" data-value="high">High School (14-18)</button>
+                        </div>
+                    </div>
+                    <div class="quiz-results hidden">
+                        <h3>Your Personalized Recommendations</h3>
+                        <div class="results-content"></div>
+                        <button class="btn btn-primary" onclick="saveResults()">Save My Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="local-highlight">
+            <div class="container">
+                <h2>Supporting Harney County Families</h2>
+                <p>Our resources are designed specifically for rural families, addressing unique challenges like internet access, distance to resources, and maintaining connections in our tight-knit community.</p>
+                <div class="local-stats">
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Local families using our tools</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5</h3>
+                        <p>Partner schools in our district</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Crisis support available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

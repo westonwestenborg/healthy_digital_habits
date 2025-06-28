@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolkit Evaluation Survey - Harney County Digital Wellness</title>
+    <meta name="description" content="Help us improve the Digital Wellness Toolkit by sharing your experience.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Harney County Digital Wellness</a></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="quick-start.html" class="nav-link">Quick Start</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Toolkit Evaluation Survey</h1>
+                <p>Help us improve the Digital Wellness Toolkit by sharing your family's experience</p>
+            </div>
+        </section>
+
+        <section class="survey-intro">
+            <div class="container">
+                <div class="intro-card">
+                    <h2>Your Voice Matters</h2>
+                    <p>This survey helps us understand how well our toolkit is working for Harney County families and how we can make it even better. Your responses are completely anonymous and will be combined with other families' feedback for program evaluation.</p>
+                    
+                    <div class="survey-details">
+                        <div class="detail-item">
+                            <strong>⏱️ Time Required:</strong> 5-7 minutes
+                        </div>
+                        <div class="detail-item">
+                            <strong>🔒 Privacy:</strong> All responses are anonymous
+                        </div>
+                        <div class="detail-item">
+                            <strong>📊 Purpose:</strong> Program evaluation and improvement
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="survey-form">
+            <div class="container">
+                <form id="evaluation-survey" class="survey-container">
+                    
+                    <!-- Section A: Consent & Eligibility -->
+                    <div class="survey-section">
+                        <h3>Section A: Eligibility & Consent</h3>
+                        
+                        <div class="question-group">
+                            <label class="question-label">
+                                <input type="checkbox" name="parent-guardian" required>
+                                I am the parent or legal guardian of a student in Harney County School District #3
+                            </label>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label class="question-label">
+                                <input type="checkbox" name="reviewed-toolkit" required>
+                                I have reviewed the Healthy Digital Habits Toolkit with my child
+                            </label>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label class="question-label">
+                                <input type="checkbox" name="consent" required>
+                                By clicking Next I agree that my anonymous responses may be combined with other families' feedback for program evaluation
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Section B: About Your Family -->
+                    <div class="survey-section">
+                        <h3>Section B: About Your Family</h3>
+                        
+                        <div class="question-group">
+                            <label>School level of your oldest participating child:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="school-level" value="elementary"> Elementary (K-5)</label>
+                                <label><input type="radio" name="school-level" value="middle"> Middle (6-8)</label>
+                                <label><input type="radio" name="school-level" value="high"> High (9-12)</label>
+                            </div>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label>Do you have reliable home internet?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="internet" value="yes"> Yes</label>
+                                <label><input type="radio" name="internet" value="sometimes"> Sometimes</label>
+                                <label><input type="radio" name="internet" value="no"> No</label>
+                            </div>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label>Primary devices your child uses at home (check all that apply):</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="devices" value="phone"> Phone</label>
+                                <label><input type="checkbox" name="devices" value="tablet"> Tablet</label>
+                                <label><input type="checkbox" name="devices" value="laptop"> Laptop/desktop</label>
+                                <label><input type="checkbox" name="devices" value="gaming"> Gaming console</label>
+                                <label><input type="checkbox" name="devices" value="tv"> Smart TV</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section C: Knowledge & Confidence -->
+                    <div class="survey-section">
+                        <h3>Section C: Knowledge & Confidence</h3>
+                        <p class="section-intro">Rate your knowledge and confidence on a scale from 1 (Not at all) to 5 (Very much):</p>
+                        
+                        <div class="matrix-question">
+                            <table class="rating-matrix">
+                                <thead>
+                                    <tr>
+                                        <th>Statement</th>
+                                        <th>Before Toolkit</th>
+                                        <th>Now</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>I could list recommended daily recreational screen-time limits for my child's age group</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="knowledge-limits-before" value="1"> 1</label>
+                                                <label><input type="radio" name="knowledge-limits-before" value="2"> 2</label>
+                                                <label><input type="radio" name="knowledge-limits-before" value="3"> 3</label>
+                                                <label><input type="radio" name="knowledge-limits-before" value="4"> 4</label>
+                                                <label><input type="radio" name="knowledge-limits-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="knowledge-limits-now" value="1"> 1</label>
+                                                <label><input type="radio" name="knowledge-limits-now" value="2"> 2</label>
+                                                <label><input type="radio" name="knowledge-limits-now" value="3"> 3</label>
+                                                <label><input type="radio" name="knowledge-limits-now" value="4"> 4</label>
+                                                <label><input type="radio" name="knowledge-limits-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>I knew how to turn on Screen Time (iOS) or Family Link (Android) and set time limits</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="knowledge-controls-before" value="1"> 1</label>
+                                                <label><input type="radio" name="knowledge-controls-before" value="2"> 2</label>
+                                                <label><input type="radio" name="knowledge-controls-before" value="3"> 3</label>
+                                                <label><input type="radio" name="knowledge-controls-before" value="4"> 4</label>
+                                                <label><input type="radio" name="knowledge-controls-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="knowledge-controls-now" value="1"> 1</label>
+                                                <label><input type="radio" name="knowledge-controls-now" value="2"> 2</label>
+                                                <label><input type="radio" name="knowledge-controls-now" value="3"> 3</label>
+                                                <label><input type="radio" name="knowledge-controls-now" value="4"> 4</label>
+                                                <label><input type="radio" name="knowledge-controls-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>I felt confident talking with my child about cyber-bullying and online safety</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="confidence-safety-before" value="1"> 1</label>
+                                                <label><input type="radio" name="confidence-safety-before" value="2"> 2</label>
+                                                <label><input type="radio" name="confidence-safety-before" value="3"> 3</label>
+                                                <label><input type="radio" name="confidence-safety-before" value="4"> 4</label>
+                                                <label><input type="radio" name="confidence-safety-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="confidence-safety-now" value="1"> 1</label>
+                                                <label><input type="radio" name="confidence-safety-now" value="2"> 2</label>
+                                                <label><input type="radio" name="confidence-safety-now" value="3"> 3</label>
+                                                <label><input type="radio" name="confidence-safety-now" value="4"> 4</label>
+                                                <label><input type="radio" name="confidence-safety-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>I could guide my child through a brief mindfulness exercise to "pause & breathe"</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="confidence-mindfulness-before" value="1"> 1</label>
+                                                <label><input type="radio" name="confidence-mindfulness-before" value="2"> 2</label>
+                                                <label><input type="radio" name="confidence-mindfulness-before" value="3"> 3</label>
+                                                <label><input type="radio" name="confidence-mindfulness-before" value="4"> 4</label>
+                                                <label><input type="radio" name="confidence-mindfulness-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="confidence-mindfulness-now" value="1"> 1</label>
+                                                <label><input type="radio" name="confidence-mindfulness-now" value="2"> 2</label>
+                                                <label><input type="radio" name="confidence-mindfulness-now" value="3"> 3</label>
+                                                <label><input type="radio" name="confidence-mindfulness-now" value="4"> 4</label>
+                                                <label><input type="radio" name="confidence-mindfulness-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>I knew at least one reliable helpline or website to turn to if screen use felt overwhelming</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="knowledge-resources-before" value="1"> 1</label>
+                                                <label><input type="radio" name="knowledge-resources-before" value="2"> 2</label>
+                                                <label><input type="radio" name="knowledge-resources-before" value="3"> 3</label>
+                                                <label><input type="radio" name="knowledge-resources-before" value="4"> 4</label>
+                                                <label><input type="radio" name="knowledge-resources-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="knowledge-resources-now" value="1"> 1</label>
+                                                <label><input type="radio" name="knowledge-resources-now" value="2"> 2</label>
+                                                <label><input type="radio" name="knowledge-resources-now" value="3"> 3</label>
+                                                <label><input type="radio" name="knowledge-resources-now" value="4"> 4</label>
+                                                <label><input type="radio" name="knowledge-resources-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Section D: Behaviors & Routines -->
+                    <div class="survey-section">
+                        <h3>Section D: Behaviors & Routines</h3>
+                        <p class="section-intro">During a typical school week, rate how often these happened on a scale from 1 (Not at all) to 5 (Very much):</p>
+                        
+                        <div class="matrix-question">
+                            <table class="rating-matrix">
+                                <thead>
+                                    <tr>
+                                        <th>Statement</th>
+                                        <th>Before Toolkit</th>
+                                        <th>Now</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>My child's non-school screen time averaged ≤ 2 hours/day</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-screentime-before" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-screentime-before" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-screentime-before" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-screentime-before" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-screentime-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-screentime-now" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-screentime-now" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-screentime-now" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-screentime-now" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-screentime-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phones/tablets were put away 30 min before bedtime</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-bedtime-before" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-bedtime-before" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-bedtime-before" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-bedtime-before" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-bedtime-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-bedtime-now" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-bedtime-now" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-bedtime-now" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-bedtime-now" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-bedtime-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>We used a family media-plan or posted rules about screens</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-mediaplan-before" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-mediaplan-before" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-mediaplan-before" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-mediaplan-before" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-mediaplan-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-mediaplan-now" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-mediaplan-now" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-mediaplan-now" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-mediaplan-now" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-mediaplan-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>My child used a mindful-moment prompt or similar break at least once a day</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-mindful-before" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-mindful-before" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-mindful-before" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-mindful-before" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-mindful-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-mindful-now" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-mindful-now" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-mindful-now" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-mindful-now" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-mindful-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>I reviewed my child's screen-time or sleep-tracking log with them each week</td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-tracking-before" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-tracking-before" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-tracking-before" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-tracking-before" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-tracking-before" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="rating-scale">
+                                                <label><input type="radio" name="behavior-tracking-now" value="1"> 1</label>
+                                                <label><input type="radio" name="behavior-tracking-now" value="2"> 2</label>
+                                                <label><input type="radio" name="behavior-tracking-now" value="3"> 3</label>
+                                                <label><input type="radio" name="behavior-tracking-now" value="4"> 4</label>
+                                                <label><input type="radio" name="behavior-tracking-now" value="5"> 5</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Section E: Toolkit Helpfulness -->
+                    <div class="survey-section">
+                        <h3>Section E: Toolkit Helpfulness</h3>
+                        <p class="section-intro">Rate how helpful each part of the toolkit was for your family on a scale from 1 (Not helpful) to 5 (Extremely helpful):</p>
+                        
+                        <div class="helpfulness-questions">
+                            <div class="question-group">
+                                <label>Family Media Plan template</label>
+                                <div class="rating-scale">
+                                    <label><input type="radio" name="helpful-mediaplan" value="1"> 1 - Not helpful</label>
+                                    <label><input type="radio" name="helpful-mediaplan" value="2"> 2</label>
+                                    <label><input type="radio" name="helpful-mediaplan" value="3"> 3</label>
+                                    <label><input type="radio" name="helpful-mediaplan" value="4"> 4</label>
+                                    <label><input type="radio" name="helpful-mediaplan" value="5"> 5 - Extremely helpful</label>
+                                </div>
+                            </div>
+                            
+                            <div class="question-group">
+                                <label>Screen-time & Sleep Trackers</label>
+                                <div class="rating-scale">
+                                    <label><input type="radio" name="helpful-trackers" value="1"> 1 - Not helpful</label>
+                                    <label><input type="radio" name="helpful-trackers" value="2"> 2</label>
+                                    <label><input type="radio" name="helpful-trackers" value="3"> 3</label>
+                                    <label><input type="radio" name="helpful-trackers" value="4"> 4</label>
+                                    <label><input type="radio" name="helpful-trackers" value="5"> 5 - Extremely helpful</label>
+                                </div>
+                            </div>
+                            
+                            <div class="question-group">
+                                <label>Mindful-Moment cards</label>
+                                <div class="rating-scale">
+                                    <label><input type="radio" name="helpful-mindful" value="1"> 1 - Not helpful</label>
+                                    <label><input type="radio" name="helpful-mindful" value="2"> 2</label>
+                                    <label><input type="radio" name="helpful-mindful" value="3"> 3</label>
+                                    <label><input type="radio" name="helpful-mindful" value="4"> 4</label>
+                                    <label><input type="radio" name="helpful-mindful" value="5"> 5 - Extremely helpful</label>
+                                </div>
+                            </div>
+                            
+                            <div class="question-group">
+                                <label>Parental-control step-by-step guide</label>
+                                <div class="rating-scale">
+                                    <label><input type="radio" name="helpful-controls" value="1"> 1 - Not helpful</label>
+                                    <label><input type="radio" name="helpful-controls" value="2"> 2</label>
+                                    <label><input type="radio" name="helpful-controls" value="3"> 3</label>
+                                    <label><input type="radio" name="helpful-controls" value="4"> 4</label>
+                                    <label><input type="radio" name="helpful-controls" value="5"> 5 - Extremely helpful</label>
+                                </div>
+                            </div>
+                            
+                            <div class="question-group">
+                                <label>Safe-Playlist builder sheet</label>
+                                <div class="rating-scale">
+                                    <label><input type="radio" name="helpful-playlist" value="1"> 1 - Not helpful</label>
+                                    <label><input type="radio" name="helpful-playlist" value="2"> 2</label>
+                                    <label><input type="radio" name="helpful-playlist" value="3"> 3</label>
+                                    <label><input type="radio" name="helpful-playlist" value="4"> 4</label>
+                                    <label><input type="radio" name="helpful-playlist" value="5"> 5 - Extremely helpful</label>
+                                </div>
+                            </div>
+                            
+                            <div class="question-group">
+                                <label>Cyber-safety / cyber-bullying tips</label>
+                                <div class="rating-scale">
+                                    <label><input type="radio" name="helpful-safety" value="1"> 1 - Not helpful</label>
+                                    <label><input type="radio" name="helpful-safety" value="2"> 2</label>
+                                    <label><input type="radio" name="helpful-safety" value="3"> 3</label>
+                                    <label><input type="radio" name="helpful-safety" value="4"> 4</label>
+                                    <label><input type="radio" name="helpful-safety" value="5"> 5 - Extremely helpful</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section F: Overall Satisfaction & Impact -->
+                    <div class="survey-section">
+                        <h3>Section F: Overall Satisfaction & Impact</h3>
+                        
+                        <div class="question-group">
+                            <label>Overall, how useful was the toolkit for your family?</label>
+                            <div class="rating-scale">
+                                <label><input type="radio" name="overall-useful" value="1"> 1 - Not useful</label>
+                                <label><input type="radio" name="overall-useful" value="2"> 2</label>
+                                <label><input type="radio" name="overall-useful" value="3"> 3</label>
+                                <label><input type="radio" name="overall-useful" value="4"> 4</label>
+                                <label><input type="radio" name="overall-useful" value="5"> 5 - Extremely useful</label>
+                            </div>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label>Would you recommend the toolkit to another family?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="recommend" value="yes"> Yes</label>
+                                <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+                                <label><input type="radio" name="recommend" value="no"> No</label>
+                            </div>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label>What ONE change would make the toolkit more helpful? (optional)</label>
+                            <textarea name="improvement-suggestion" placeholder="Your suggestion for improvement..."></textarea>
+                        </div>
+                        
+                        <div class="question-group">
+                            <label>Share a win! Describe any positive change you noticed after using the toolkit (optional)</label>
+                            <textarea name="success-story" placeholder="Tell us about a positive change in your family..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="survey-submit">
+                        <button type="submit" class="btn btn-primary btn-large">Submit Survey</button>
+                        <p class="submit-note">Thank you for helping us improve digital wellness resources for Harney County families!</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="survey-thanks hidden" id="thank-you-message">
+            <div class="container">
+                <div class="thanks-card">
+                    <h2>🙏 Thank You!</h2>
+                    <p>Your feedback has been submitted and will help us improve the Digital Wellness Toolkit for all Harney County families.</p>
+                    
+                    <div class="next-steps">
+                        <h3>What happens next?</h3>
+                        <ul>
+                            <li>Your anonymous responses will be combined with other families' feedback</li>
+                            <li>We'll analyze the data to understand what's working and what needs improvement</li>
+                            <li>Updates to the toolkit will be based on your input</li>
+                            <li>Results summary will be shared with the community</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="continue-journey">
+                        <h3>Continue Your Digital Wellness Journey</h3>
+                        <div class="action-buttons">
+                            <a href="parent-toolkit.html" class="btn btn-primary">Access More Resources</a>
+                            <a href="get-help.html" class="btn btn-secondary">Get Additional Support</a>
+                            <a href="index.html" class="btn btn-outline">Return to Homepage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="survey.js"></script>
+</body>
+</html>

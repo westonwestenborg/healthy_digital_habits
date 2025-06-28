@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Start Guide - Harney County Digital Wellness</title>
+    <meta name="description" content="Get started with practical digital wellness tools for your family in just minutes.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Harney County Digital Wellness</a></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="quick-start.html" class="nav-link active">Quick Start</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Quick Start Guide</h1>
+                <p>Get your family on the path to healthy digital habits in just a few minutes</p>
+            </div>
+        </section>
+
+        <section class="quick-start-options">
+            <div class="container">
+                <div class="start-cards">
+                    <div class="start-card urgent">
+                        <div class="card-icon">⚠️</div>
+                        <h2>Something Feels Wrong</h2>
+                        <p>Quick assessment for parents who are concerned about their child's behavior or digital habits</p>
+                        <a href="#risk-assessment" class="btn btn-primary">Take 30-Second Assessment</a>
+                    </div>
+                    
+                    <div class="start-card proactive">
+                        <div class="card-icon">🎯</div>
+                        <h2>Ready to Take Action</h2>
+                        <p>Create a personalized family action plan with specific steps you can start today</p>
+                        <a href="#action-plan" class="btn btn-primary">Get My Action Plan</a>
+                    </div>
+                    
+                    <div class="start-card learning">
+                        <div class="card-icon">📚</div>
+                        <h2>Just Getting Started</h2>
+                        <p>Learn the basics of digital wellness and explore tools at your own pace</p>
+                        <a href="#basics-guide" class="btn btn-secondary">Explore the Basics</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="risk-assessment" class="assessment-section">
+            <div class="container">
+                <h2>Is My Child at Risk? - 30-Second Check</h2>
+                <p class="section-intro">This quick assessment helps identify if your child might benefit from immediate support or if you should consider professional help.</p>
+                
+                <div class="assessment-form">
+                    <div class="checklist">
+                        <h3>Check any that apply to your child:</h3>
+                        <div class="checklist-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="sleep">
+                                <span class="checkmark"></span>
+                                Sleep problems (difficulty falling asleep, staying asleep, or waking up)
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="mood">
+                                <span class="checkmark"></span>
+                                Extreme mood changes when screen time ends
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="isolation">
+                                <span class="checkmark"></span>
+                                Avoiding family activities or friends
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="grades">
+                                <span class="checkmark"></span>
+                                Declining grades or avoiding schoolwork
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="physical">
+                                <span class="checkmark"></span>
+                                Physical complaints (headaches, eye strain, back pain)
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="eating">
+                                <span class="checkmark"></span>
+                                Changes in eating habits (skipping meals, eating at screen)
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="aggression">
+                                <span class="checkmark"></span>
+                                Increased aggression or defiance
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="lies">
+                                <span class="checkmark"></span>
+                                Lying about screen time or online activities
+                            </label>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" onclick="assessRisk()">Get My Results</button>
+                    </div>
+                    
+                    <div class="assessment-results hidden" id="risk-results">
+                        <div class="results-content">
+                            <!-- Results will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action-plan" class="action-plan-section">
+            <div class="container">
+                <h2>Today's Action Plan Generator</h2>
+                <p class="section-intro">Answer a few quick questions to get a personalized plan you can start implementing today.</p>
+                
+                <div class="plan-generator">
+                    <div class="plan-step active" data-step="1">
+                        <h3>What's your main goal?</h3>
+                        <div class="plan-options">
+                            <button class="plan-option" data-value="reduce-time">Reduce overall screen time</button>
+                            <button class="plan-option" data-value="improve-content">Improve content quality</button>
+                            <button class="plan-option" data-value="family-time">Increase family connection</button>
+                            <button class="plan-option" data-value="bedtime">Fix bedtime routines</button>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-step hidden" data-step="2">
+                        <h3>How much time do you have to implement changes?</h3>
+                        <div class="plan-options">
+                            <button class="plan-option" data-value="5-min">5 minutes right now</button>
+                            <button class="plan-option" data-value="30-min">30 minutes this evening</button>
+                            <button class="plan-option" data-value="weekend">This weekend</button>
+                            <button class="plan-option" data-value="gradual">Gradual changes over time</button>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-step hidden" data-step="3">
+                        <h3>What describes your child best?</h3>
+                        <div class="plan-options">
+                            <button class="plan-option" data-value="cooperative">Usually cooperative with rules</button>
+                            <button class="plan-option" data-value="resistant">Resistant to changes</button>
+                            <button class="plan-option" data-value="young">Too young to understand (under 8)</button>
+                            <button class="plan-option" data-value="teen">Independent teenager</button>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-results hidden">
+                        <h3>Your Personalized Action Plan</h3>
+                        <div class="plan-content">
+                            <!-- Plan will be generated by JavaScript -->
+                        </div>
+                        <div class="plan-actions">
+                            <button class="btn btn-primary" onclick="downloadPlan()">Download PDF Plan</button>
+                            <button class="btn btn-secondary" onclick="emailPlan()">Email to Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="basics-guide" class="basics-section">
+            <div class="container">
+                <h2>Digital Wellness Basics</h2>
+                <p class="section-intro">New to digital wellness? Start here with the fundamentals every parent should know.</p>
+                
+                <div class="basics-grid">
+                    <div class="basic-card">
+                        <h3>Screen Time Guidelines</h3>
+                        <div class="age-guidelines">
+                            <div class="age-group">
+                                <strong>Ages 2-5:</strong> 1 hour of high-quality content
+                            </div>
+                            <div class="age-group">
+                                <strong>Ages 6+:</strong> Consistent limits that don't interfere with sleep, physical activity, or other healthy behaviors
+                            </div>
+                            <div class="age-group">
+                                <strong>Teens:</strong> Focus on content quality and time balance rather than strict limits
+                            </div>
+                        </div>
+                        <a href="digital-wellness.html" class="card-link">Learn More →</a>
+                    </div>
+                    
+                    <div class="basic-card">
+                        <h3>Warning Signs to Watch</h3>
+                        <ul class="warning-list">
+                            <li>Sleep disruption</li>
+                            <li>Mood changes around screen time</li>
+                            <li>Decline in grades or activities</li>
+                            <li>Social isolation</li>
+                            <li>Physical complaints</li>
+                        </ul>
+                        <a href="online-safety.html" class="card-link">Full Warning Signs Guide →</a>
+                    </div>
+                    
+                    <div class="basic-card">
+                        <h3>First Steps for Parents</h3>
+                        <ol class="first-steps">
+                            <li>Track current screen time for one week</li>
+                            <li>Create screen-free zones (bedrooms, dining table)</li>
+                            <li>Establish a family media plan</li>
+                            <li>Model healthy digital habits</li>
+                            <li>Plan alternative activities</li>
+                        </ol>
+                        <a href="parent-toolkit.html" class="card-link">Get Started Tools →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-steps">
+            <div class="container">
+                <h2>Ready for More?</h2>
+                <div class="next-steps-grid">
+                    <div class="next-step-card">
+                        <h3>Join Our Community</h3>
+                        <p>Connect with other Harney County parents sharing the journey</p>
+                        <a href="parent-toolkit.html#community" class="btn btn-secondary">Join Forum</a>
+                    </div>
+                    <div class="next-step-card">
+                        <h3>Get Weekly Tips</h3>
+                        <p>Receive practical tips and challenges via email</p>
+                        <a href="#newsletter-signup" class="btn btn-secondary">Sign Up</a>
+                    </div>
+                    <div class="next-step-card">
+                        <h3>Need Help Now?</h3>
+                        <p>Access local resources and crisis support</p>
+                        <a href="get-help.html" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quick-start.js"></script>
+</body>
+</html>

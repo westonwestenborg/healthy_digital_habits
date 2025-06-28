@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Toolkit - Harney County Digital Wellness</title>
+    <meta name="description" content="Downloads, videos, community support, and resources for parents navigating digital wellness.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Harney County Digital Wellness</a></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="quick-start.html" class="nav-link">Quick Start</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link active">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Parent Toolkit</h1>
+                <p>Downloads, videos, community support, and everything you need to guide your family's digital wellness journey</p>
+            </div>
+        </section>
+
+        <section class="downloads-section">
+            <div class="container">
+                <h2>📥 Downloads & Printables</h2>
+                <p class="section-intro">Print-ready resources, templates, and guides you can use offline</p>
+                
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <div class="download-icon">📋</div>
+                        <h3>Family Media Plan Template</h3>
+                        <p>Comprehensive template to create your family's screen time agreement</p>
+                        <div class="download-actions">
+                            <button class="btn btn-primary" onclick="downloadFamilyMediaPlan()">Download PDF</button>
+                            <a href="https://instituteofchildpsychology.com/wp-content/uploads/2022/01/Family-Media-plan-1.pdf" target="_blank" class="btn btn-outline">Original PDF</a>
+                        </div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="download-icon">📊</div>
+                        <h3>Screen Time & Sleep Trackers</h3>
+                        <p>Weekly tracking sheets to monitor healthy habits</p>
+                        <div class="download-actions">
+                            <button class="btn btn-primary" onclick="downloadTrackingSheets()">Download Both</button>
+                            <button class="btn btn-outline" onclick="downloadScreenTimeTracker()">Screen Time Only</button>
+                        </div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="download-icon">🛡️</div>
+                        <h3>Online Safety Checklist</h3>
+                        <p>Complete checklist for device setup and family safety planning</p>
+                        <div class="download-actions">
+                            <button class="btn btn-primary" onclick="downloadSafetyChecklist()">Download PDF</button>
+                        </div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="download-icon">🧘</div>
+                        <h3>Mindful Moment Cards</h3>
+                        <p>Print and cut cards to place near devices for mindful pauses</p>
+                        <div class="download-actions">
+                            <button class="btn btn-primary" onclick="downloadMindfulCards()">Download All Cards</button>
+                            <a href="mindful-breaks.html#mindful-cards" class="btn btn-outline">Customize Cards</a>
+                        </div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="download-icon">📱</div>
+                        <h3>Parental Controls Quick Guide</h3>
+                        <p>Step-by-step setup instructions for iOS and Android devices</p>
+                        <div class="download-actions">
+                            <button class="btn btn-primary" onclick="downloadControlsGuide()">Download Guide</button>
+                            <a href="online-safety.html#device-controls" class="btn btn-outline">Interactive Guide</a>
+                        </div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="download-icon">🎯</div>
+                        <h3>50 Screen-Free Activities</h3>
+                        <p>Ideas for family activities organized by time and type</p>
+                        <div class="download-actions">
+                            <button class="btn btn-primary" onclick="downloadActivitiesList()">Download List</button>
+                            <a href="mindful-breaks.html#family-activities" class="btn btn-outline">Browse Online</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="printing-note">
+                    <h3>💡 Can't Print at Home?</h3>
+                    <p>No printer? No problem! These local resources can help:</p>
+                    <ul>
+                        <li><strong>Harney County Library</strong> - Free printing for community members</li>
+                        <li><strong>School District Office</strong> - Ask about family resource printing</li>
+                        <li><strong>Local Copy Shops</strong> - Small fee for professional printing</li>
+                        <li><strong>Digital Versions</strong> - Save PDFs to your phone for reference anywhere</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos-section">
+            <div class="container">
+                <h2>🎥 How-To Videos</h2>
+                <p class="section-intro">Step-by-step video tutorials for common digital wellness tasks</p>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <span class="play-icon">▶️</span>
+                            <span class="video-duration">3:45</span>
+                        </div>
+                        <h3>Setting Up iPhone Screen Time</h3>
+                        <p>Complete walkthrough of iOS parental controls and family sharing setup</p>
+                        <button class="btn btn-primary" onclick="playVideo('ios-setup')">Watch Video</button>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <span class="play-icon">▶️</span>
+                            <span class="video-duration">4:12</span>
+                        </div>
+                        <h3>Android Family Link Setup</h3>
+                        <p>How to connect your child's Android device with Family Link controls</p>
+                        <button class="btn btn-primary" onclick="playVideo('android-setup')">Watch Video</button>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <span class="play-icon">▶️</span>
+                            <span class="video-duration">2:30</span>
+                        </div>
+                        <h3>Having the Screen Time Conversation</h3>
+                        <p>Tips for talking with your child about healthy digital habits</p>
+                        <button class="btn btn-primary" onclick="playVideo('conversation-tips')">Watch Video</button>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <span class="play-icon">▶️</span>
+                            <span class="video-duration">5:20</span>
+                        </div>
+                        <h3>Creating a Family Media Plan</h3>
+                        <p>Step-by-step process for involving your whole family in setting digital boundaries</p>
+                        <button class="btn btn-primary" onclick="playVideo('media-plan')">Watch Video</button>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <span class="play-icon">▶️</span>
+                            <span class="video-duration">3:15</span>
+                        </div>
+                        <h3>Recognizing Cyberbullying Signs</h3>
+                        <p>What to watch for and how to respond if your child is experiencing online harassment</p>
+                        <button class="btn btn-primary" onclick="playVideo('cyberbullying-signs')">Watch Video</button>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <span class="play-icon">▶️</span>
+                            <span class="video-duration">2:45</span>
+                        </div>
+                        <h3>Making Mindful Moment Cards</h3>
+                        <p>Family-friendly tutorial for creating physical reminders for digital breaks</p>
+                        <button class="btn btn-primary" onclick="playVideo('mindful-cards')">Watch Video</button>
+                    </div>
+                </div>
+                
+                <div class="video-note">
+                    <p><strong>Note:</strong> Videos are optimized for mobile viewing and include closed captions. Each video can be downloaded for offline viewing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="success-stories">
+            <div class="container">
+                <h2>🌟 Success Stories from Harney County Families</h2>
+                <p class="section-intro">Real stories from local families who have improved their digital wellness</p>
+                
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-quote">"We went from constant screen time battles to actually enjoying family dinners again. The mindful moment cards were a game-changer for our household."</div>
+                        <div class="story-author">
+                            <strong>Sarah M.</strong> - Parent of 2 (ages 8 & 12)
+                            <span class="story-location">Burns, OR</span>
+                        </div>
+                        <div class="story-details">
+                            <p><strong>Challenge:</strong> Kids resistant to screen time limits, frequent arguments</p>
+                            <p><strong>Solution:</strong> Family media plan + mindful moment cards</p>
+                            <p><strong>Results:</strong> 50% reduction in screen time conflicts, more family connection</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-quote">"My daughter was being cyberbullied, and I didn't know the signs. This toolkit helped me recognize what was happening and get her the support she needed."</div>
+                        <div class="story-author">
+                            <strong>Michael T.</strong> - Single dad
+                            <span class="story-location">Hines, OR</span>
+                        </div>
+                        <div class="story-details">
+                            <p><strong>Challenge:</strong> Unaware of cyberbullying situation</p>
+                            <p><strong>Solution:</strong> Warning signs checklist + school partnership</p>
+                            <p><strong>Results:</strong> Early intervention, daughter feeling supported</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-quote">"The sleep tracking really opened our eyes. We didn't realize how much late-night gaming was affecting our son's mood and grades."</div>
+                        <div class="story-author">
+                            <strong>Jennifer & Carlos R.</strong> - Parents of teen
+                            <span class="story-location">Burns, OR</span>
+                        </div>
+                        <div class="story-details">
+                            <p><strong>Challenge:</strong> Teen's mood changes, declining grades</p>
+                            <p><strong>Solution:</strong> Sleep tracking + device curfews</p>
+                            <p><strong>Results:</strong> Better sleep, improved academic performance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-quote">"I was skeptical about parental controls, but the step-by-step guide made it so easy. Now I feel more confident about my kids' online safety."</div>
+                        <div class="story-author">
+                            <strong>Diana K.</strong> - Grandmother raising grandchildren
+                            <span class="story-location">Crane, OR</span>
+                        </div>
+                        <div class="story-details">
+                            <p><strong>Challenge:</strong> Unfamiliar with technology, worried about safety</p>
+                            <p><strong>Solution:</strong> Parental controls guide + community support</p>
+                            <p><strong>Results:</strong> Increased confidence, safer online environment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="share-story">
+                    <h3>Share Your Success Story</h3>
+                    <p>Has your family benefited from digital wellness strategies? We'd love to hear from you!</p>
+                    <button class="btn btn-primary" onclick="openStoryForm()">Share Your Story</button>
+                    <p class="privacy-note">All stories are shared anonymously and with permission. Personal details are changed to protect privacy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-forum" id="community">
+            <div class="container">
+                <h2>👥 Parent Community Forum</h2>
+                <p class="section-intro">Connect with other Harney County parents navigating digital wellness challenges</p>
+                
+                <div class="forum-features">
+                    <div class="feature-card">
+                        <h3>💬 Discussion Topics</h3>
+                        <ul>
+                            <li>Age-appropriate screen time questions</li>
+                            <li>App recommendations and concerns</li>
+                            <li>Success stories and challenges</li>
+                            <li>Local resource sharing</li>
+                            <li>Technology troubleshooting help</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🛡️ Safe Environment</h3>
+                        <ul>
+                            <li>Moderated discussions</li>
+                            <li>No judgment zone</li>
+                            <li>Anonymous posting options</li>
+                            <li>Local focus and relevance</li>
+                            <li>Expert guidance available</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📅 Events & Workshops</h3>
+                        <ul>
+                            <li>Monthly virtual parent meetups</li>
+                            <li>Seasonal digital wellness challenges</li>
+                            <li>Guest expert presentations</li>
+                            <li>Family activity planning</li>
+                            <li>School partnership events</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="recent-discussions">
+                    <h3>Recent Discussions</h3>
+                    <div class="discussion-list">
+                        <div class="discussion-item">
+                            <div class="discussion-title">How do you handle screen time during winter months?</div>
+                            <div class="discussion-meta">12 replies • Last active 2 hours ago</div>
+                            <div class="discussion-preview">Parents sharing creative indoor alternatives and seasonal adjustments to screen time rules...</div>
+                        </div>
+                        
+                        <div class="discussion-item">
+                            <div class="discussion-title">Middle schooler wants TikTok - advice needed</div>
+                            <div class="discussion-meta">8 replies • Last active 5 hours ago</div>
+                            <div class="discussion-preview">Discussion about age-appropriate social media introduction and safety considerations...</div>
+                        </div>
+                        
+                        <div class="discussion-item">
+                            <div class="discussion-title">Success: Family media plan actually working!</div>
+                            <div class="discussion-meta">15 replies • Last active 1 day ago</div>
+                            <div class="discussion-preview">Parent shares what worked for their family and gets encouragement from others...</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="join-community">
+                    <h3>Join the Conversation</h3>
+                    <p>Connect with other parents, share experiences, and get support for your digital wellness journey.</p>
+                    <button class="btn btn-primary" onclick="joinCommunity()">Join Community Forum</button>
+                    <button class="btn btn-outline" onclick="viewForumGuidelines()">Read Community Guidelines</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="expert-resources">
+            <div class="container">
+                <h2>🎓 Expert Resources & Research</h2>
+                <p class="section-intro">Evidence-based information from leading organizations and researchers</p>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>American Academy of Pediatrics</h3>
+                        <p>Official guidelines for children's media use and digital wellness</p>
+                        <a href="https://www.healthychildren.org/English/family-life/Media/Pages/default.aspx" target="_blank" class="resource-link">Visit Resource →</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Common Sense Media</h3>
+                        <p>Age-appropriate media recommendations and digital citizenship resources</p>
+                        <a href="https://www.commonsensemedia.org/" target="_blank" class="resource-link">Visit Resource →</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>National Center for Missing & Exploited Children</h3>
+                        <p>NetSmartz program for online safety education</p>
+                        <a href="https://www.missingkids.org/netsmartz" target="_blank" class="resource-link">Visit Resource →</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>StopBullying.gov</h3>
+                        <p>Federal resources for preventing and addressing cyberbullying</p>
+                        <a href="https://www.stopbullying.gov/cyberbullying" target="_blank" class="resource-link">Visit Resource →</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>National Sleep Foundation</h3>
+                        <p>Research on sleep, screen time, and adolescent development</p>
+                        <a href="https://www.sleepfoundation.org/" target="_blank" class="resource-link">Visit Resource →</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Harvard Health - Digital Wellness</h3>
+                        <p>Research-based articles on technology's impact on mental health</p>
+                        <a href="https://www.health.harvard.edu/" target="_blank" class="resource-link">Visit Resource →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <div class="container">
+                <h2>📬 Stay Connected</h2>
+                <p class="section-intro">Get weekly tips, new resources, and community updates delivered to your inbox</p>
+                
+                <div class="signup-form">
+                    <h3>Digital Wellness Weekly</h3>
+                    <p>Join 150+ Harney County parents receiving practical tips and encouragement</p>
+                    
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <div class="form-options">
+                            <label>
+                                <input type="checkbox" id="weekly-tips" checked>
+                                Weekly digital wellness tips
+                            </label>
+                            <label>
+                                <input type="checkbox" id="new-resources">
+                                New resource notifications
+                            </label>
+                            <label>
+                                <input type="checkbox" id="community-events">
+                                Community event invitations
+                            </label>
+                        </div>
+                        <p class="privacy-policy">We respect your privacy. Unsubscribe anytime. No spam, just helpful resources for your family.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="parent-toolkit.js"></script>
+</body>
+</html>

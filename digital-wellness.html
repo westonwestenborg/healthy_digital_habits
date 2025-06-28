@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness - Harney County Digital Wellness</title>
+    <meta name="description" content="Screen time guidelines, tracking tools, and family media plans for healthy digital habits.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Harney County Digital Wellness</a></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="quick-start.html" class="nav-link">Quick Start</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link active">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Digital Wellness</h1>
+                <p>Screen time guidelines, family media plans, and tracking tools for healthy digital habits</p>
+            </div>
+        </section>
+
+        <section class="guidelines-section">
+            <div class="container">
+                <h2>Recommended Screen Time Guidelines</h2>
+                <p class="section-intro">Based on guidance from the American Academy of Pediatrics (AAP) and Common Sense Media</p>
+                
+                <div class="guidelines-grid">
+                    <div class="guideline-card">
+                        <h3>Children & Teens (6-18 years)</h3>
+                        <div class="guideline-amount">1-2 hours</div>
+                        <p>per day of recreational screen time</p>
+                    </div>
+                    
+                    <div class="guideline-card">
+                        <h3>Sleep Guidelines</h3>
+                        <div class="sleep-times">
+                            <div class="sleep-range">
+                                <strong>Ages 6-12:</strong> 9-12 hours per night
+                            </div>
+                            <div class="sleep-range">
+                                <strong>Ages 13-18:</strong> 8-10 hours per night
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="healthy-tips">
+                    <h3>Healthy Screen Time Tips</h3>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <span class="tip-icon">🚫</span>
+                            <p>Set screen-free zones (at meal time, in bedrooms)</p>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-icon">📏</span>
+                            <p>Establish consistent rules for daily screen use</p>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-icon">📱</span>
+                            <p>Use built-in tools (like Screen Time or Digital Wellbeing) to monitor and set limits</p>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-icon">🏃</span>
+                            <p>Encourage time for non-screen activities (outdoor play, reading, etc)</p>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-icon">💬</span>
+                            <p>Talk regularly with children about what they watch or play</p>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-icon">👨‍👩‍👧‍👦</span>
+                            <p>Model healthy screen use as an adult</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tracking-tools">
+            <div class="container">
+                <h2>Screen Time & Sleep Tracking Tools</h2>
+                
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>🕒 Screen Time Tracker</h3>
+                        <p>A simple daily or weekly log to track time spent on different activities</p>
+                        
+                        <div class="tracker-categories">
+                            <h4>Track time spent on:</h4>
+                            <ul>
+                                <li>Social media</li>
+                                <li>Gaming</li>
+                                <li>Watching videos</li>
+                                <li>Schoolwork or learning apps</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="how-to-use">
+                            <h4>How to use it:</h4>
+                            <ol>
+                                <li>Use the tracker for a few days to notice patterns</li>
+                                <li>Talk about what feels "just right" vs "too much"</li>
+                                <li>Try one small change (like no screens for 30 mins before bed)</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="tool-actions">
+                            <button class="btn btn-primary" onclick="openScreenTimeTracker()">Start Tracking</button>
+                            <a href="#" class="btn btn-secondary" onclick="downloadScreenTimeTemplate()">Download PDF Template</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3>🌙 Sleep Tracker</h3>
+                        <p>A basic chart to track bedtime, wake time, and total sleep each night</p>
+                        
+                        <div class="sleep-tips">
+                            <h4>Tips for Better Sleep:</h4>
+                            <ul>
+                                <li>Stick to consistent bedtime and wake time, even on weekends</li>
+                                <li>Avoid screens 30-60 mins before bedtime</li>
+                                <li>Create a relaxing bedtime routine (reading, deep breathing, listening to calming music)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="family-tips">
+                            <h4>Tips for Families:</h4>
+                            <ul>
+                                <li>Make it a no-pressure conversation</li>
+                                <li>Celebrate small wins, like getting an extra 30 mins of rest</li>
+                                <li>Consider a family "screen break" time where everyone puts devices away together</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tool-actions">
+                            <button class="btn btn-primary" onclick="openSleepTracker()">Start Tracking</button>
+                            <a href="#" class="btn btn-secondary" onclick="downloadSleepTemplate()">Download PDF Template</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Screen Time Tracker -->
+        <section id="screen-time-tracker-modal" class="tracker-modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Screen Time Tracker</h3>
+                    <button class="close-modal" onclick="closeTracker()">&times;</button>
+                </div>
+                <div class="tracker-form">
+                    <div class="date-selector">
+                        <label for="tracker-date">Date:</label>
+                        <input type="date" id="tracker-date" value="">
+                    </div>
+                    
+                    <div class="time-entries">
+                        <div class="time-entry">
+                            <label for="work-school-time">Work/School (hours):</label>
+                            <input type="number" id="work-school-time" min="0" max="24" step="0.5" placeholder="0">
+                        </div>
+                        <div class="time-entry">
+                            <label for="entertainment-time">Entertainment (hours):</label>
+                            <input type="number" id="entertainment-time" min="0" max="24" step="0.5" placeholder="0">
+                        </div>
+                        <div class="time-entry">
+                            <label for="communication-time">Communication (hours):</label>
+                            <input type="number" id="communication-time" min="0" max="24" step="0.5" placeholder="0">
+                        </div>
+                        <div class="time-entry">
+                            <label for="personal-dev-time">Personal Development (hours):</label>
+                            <input type="number" id="personal-dev-time" min="0" max="24" step="0.5" placeholder="0">
+                        </div>
+                    </div>
+                    
+                    <div class="total-display">
+                        <strong>Total Screen Time: <span id="total-time">0</span> hours</strong>
+                    </div>
+                    
+                    <div class="tracker-actions">
+                        <button class="btn btn-primary" onclick="saveScreenTime()">Save Entry</button>
+                        <button class="btn btn-secondary" onclick="viewHistory()">View History</button>
+                    </div>
+                </div>
+                
+                <div id="screen-time-history" class="history-section hidden">
+                    <h4>Your Screen Time History</h4>
+                    <div id="history-chart"></div>
+                    <div id="history-table"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Sleep Tracker -->
+        <section id="sleep-tracker-modal" class="tracker-modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Sleep Tracker</h3>
+                    <button class="close-modal" onclick="closeTracker()">&times;</button>
+                </div>
+                <div class="tracker-form">
+                    <div class="date-selector">
+                        <label for="sleep-date">Date:</label>
+                        <input type="date" id="sleep-date" value="">
+                    </div>
+                    
+                    <div class="sleep-entries">
+                        <div class="time-entry">
+                            <label for="bedtime">Bedtime:</label>
+                            <input type="time" id="bedtime">
+                        </div>
+                        <div class="time-entry">
+                            <label for="wake-time">Wake-up Time:</label>
+                            <input type="time" id="wake-time">
+                        </div>
+                        <div class="time-entry">
+                            <label for="sleep-quality">Sleep Quality (1-5):</label>
+                            <select id="sleep-quality">
+                                <option value="">Select</option>
+                                <option value="1">1 - Very Poor</option>
+                                <option value="2">2 - Poor</option>
+                                <option value="3">3 - Fair</option>
+                                <option value="4">4 - Good</option>
+                                <option value="5">5 - Excellent</option>
+                            </select>
+                        </div>
+                        <div class="time-entry">
+                            <label for="energy-level">Energy Level (1-5):</label>
+                            <select id="energy-level">
+                                <option value="">Select</option>
+                                <option value="1">1 - Very Low</option>
+                                <option value="2">2 - Low</option>
+                                <option value="3">3 - Moderate</option>
+                                <option value="4">4 - High</option>
+                                <option value="5">5 - Very High</option>
+                            </select>
+                        </div>
+                        <div class="time-entry full-width">
+                            <label for="sleep-notes">Notes (optional):</label>
+                            <textarea id="sleep-notes" placeholder="Any factors that affected your sleep..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="total-display">
+                        <strong>Total Sleep: <span id="total-sleep">0</span> hours</strong>
+                    </div>
+                    
+                    <div class="tracker-actions">
+                        <button class="btn btn-primary" onclick="saveSleepEntry()">Save Entry</button>
+                        <button class="btn btn-secondary" onclick="viewSleepHistory()">View History</button>
+                    </div>
+                </div>
+                
+                <div id="sleep-history" class="history-section hidden">
+                    <h4>Your Sleep History</h4>
+                    <div id="sleep-chart"></div>
+                    <div id="sleep-table"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="family-media-plan">
+            <div class="container">
+                <h2>Family Media Plan</h2>
+                <p class="section-intro">Create a personalized family agreement about screen time, device use, and digital wellness goals</p>
+                
+                <div class="plan-options">
+                    <div class="plan-card">
+                        <h3>Interactive Family Media Plan</h3>
+                        <p>Build a customized plan with our step-by-step wizard</p>
+                        <button class="btn btn-primary" onclick="startFamilyPlan()">Create Your Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h3>Download PDF Template</h3>
+                        <p>Print and fill out our comprehensive family media agreement</p>
+                        <a href="https://instituteofchildpsychology.com/wp-content/uploads/2022/01/Family-Media-plan-1.pdf" target="_blank" class="btn btn-secondary">Download PDF</a>
+                    </div>
+                </div>
+                
+                <div class="plan-note">
+                    <p><strong>Note:</strong> Not all families have access to printers. Visit your local library or school office for printing assistance, or use our online tool to create and save your plan digitally.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <div class="container">
+                <h2>Additional Resources</h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h3>Built-in Device Tools</h3>
+                        <ul>
+                            <li><strong>iOS:</strong> Screen Time settings</li>
+                            <li><strong>Android:</strong> Digital Wellbeing & Family Link</li>
+                            <li><strong>Windows:</strong> Family Safety</li>
+                            <li><strong>Gaming:</strong> Console parental controls</li>
+                        </ul>
+                        <a href="parental-controls.html" class="resource-link">Setup Guides →</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Alternative Activities</h3>
+                        <ul>
+                            <li>Outdoor exploration and nature walks</li>
+                            <li>Board games and puzzles</li>
+                            <li>Creative arts and crafts</li>
+                            <li>Reading and storytelling</li>
+                            <li>Cooking and baking together</li>
+                        </ul>
+                        <a href="alternative-activities.html" class="resource-link">50+ Activity Ideas →</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Professional Resources</h3>
+                        <ul>
+                            <li>American Academy of Pediatrics guidelines</li>
+                            <li>Common Sense Media recommendations</li>
+                            <li>CDC sleep guidelines</li>
+                            <li>National Sleep Foundation resources</li>
+                        </ul>
+                        <a href="professional-resources.html" class="resource-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tracking-tools.js"></script>
+</body>
+</html>
