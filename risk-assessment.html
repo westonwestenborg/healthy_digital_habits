@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Assessment - Harney County Digital Wellness</title>
+    <meta name="description" content="Quick 30-second assessment to identify potential digital wellness concerns and get immediate recommendations.">
+    <link rel="stylesheet" href="styles-new.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Harney County Digital Wellness</a></h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="digital-wellness.html" class="nav-link">Digital Wellness</a></li>
+                    <li><a href="online-safety.html" class="nav-link">Online Safety</a></li>
+                    <li><a href="mindful-breaks.html" class="nav-link">Mindful Breaks</a></li>
+                    <li><a href="parent-toolkit.html" class="nav-link">Parent Toolkit</a></li>
+                    <li><a href="get-help.html" class="nav-link">Get Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Risk Assessment</h1>
+                <p>A quick 30-second check to identify potential concerns and get immediate, personalized recommendations for your family.</p>
+            </div>
+        </section>
+
+        <section class="assessment-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <h2 class="icon-text">
+                        <span class="icon icon-warning icon-warning"></span>
+                        Is My Child at Risk?
+                    </h2>
+                    <p>This assessment helps identify if your child might benefit from immediate support or if you should consider professional help. It's designed by child development experts and used by parents across Harney County.</p>
+                    
+                    <div class="assessment-note">
+                        <p><strong>Important:</strong> This is a screening tool, not a diagnosis. If you have serious concerns about your child's safety or mental health, contact a professional immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="assessment-form-section">
+            <div class="container">
+                <div class="assessment-form">
+                    <div class="checklist">
+                        <h3>Check any that apply to your child:</h3>
+                        <div class="checklist-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="sleep">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Sleep problems</strong>
+                                    <span class="item-description">Difficulty falling asleep, staying asleep, or waking up</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="mood">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Extreme mood changes</strong>
+                                    <span class="item-description">Tantrums, anger, or distress when screen time ends</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="isolation">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Social withdrawal</strong>
+                                    <span class="item-description">Avoiding family activities, friends, or social situations</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="grades">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Academic decline</strong>
+                                    <span class="item-description">Declining grades, avoiding homework, or missing assignments</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="physical">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Physical complaints</strong>
+                                    <span class="item-description">Frequent headaches, eye strain, neck/back pain</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="eating">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Eating habit changes</strong>
+                                    <span class="item-description">Skipping meals, eating only while using screens</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="aggression">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Increased aggression</strong>
+                                    <span class="item-description">More defiant, argumentative, or aggressive behavior</span>
+                                </span>
+                            </label>
+                            
+                            <label class="checklist-item">
+                                <input type="checkbox" name="risk-factor" value="lies">
+                                <span class="checkmark"></span>
+                                <span class="item-text">
+                                    <strong>Dishonesty about screen use</strong>
+                                    <span class="item-description">Lying about time spent or activities online</span>
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <div class="assessment-actions">
+                            <button type="button" class="btn btn-primary btn-large" onclick="assessRisk()">Get My Results</button>
+                            <p class="assessment-note">Results appear immediately below</p>
+                        </div>
+                    </div>
+                    
+                    <div class="assessment-results hidden" id="risk-results">
+                        <div class="results-content">
+                            <!-- Results will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-steps-section">
+            <div class="container">
+                <h2>Other Quick Tools</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <span class="icon icon-target icon-success"></span>
+                        <h3>Action Plan Generator</h3>
+                        <p>Create a personalized plan with specific steps for your family's situation.</p>
+                        <a href="action-plan.html" class="btn btn-secondary">Create Plan</a>
+                    </div>
+                    
+                    <div class="card">
+                        <span class="icon icon-book icon-primary"></span>
+                        <h3>Digital Wellness Basics</h3>
+                        <p>Learn evidence-based guidelines and best practices for healthy screen habits.</p>
+                        <a href="digital-wellness-basics.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    
+                    <div class="card">
+                        <span class="icon icon-emergency icon-error"></span>
+                        <h3>Need Help Now?</h3>
+                        <p>Access crisis support, local resources, and professional guidance.</p>
+                        <a href="get-help.html" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="crisis-support.html">Crisis Support</a></li>
+                        <li><a href="school-contacts.html">School Contacts</a></li>
+                        <li><a href="local-resources.html">Local Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="videos.html">How-To Videos</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Questions or feedback?</p>
+                    <p>Email: info@harneycountydigitalwellness.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harney County Digital Wellness Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quick-start.js"></script>
+</body>
+</html>
